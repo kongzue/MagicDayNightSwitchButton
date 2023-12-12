@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/box_day_night_switch"
+        android:layout_width="100dp"
+        android:layout_height="49dp"
+        android:elevation="20dp"
+        app:layoutDescription="@xml/motion_scene"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".MainActivity">
+
+        <com.kongzue.magicdaynightswitchbutton.TintCustomImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#036BFF" />
+
+        <ImageView
+            android:id="@+id/img_cloud_front"
+            android:layout_width="101.2dp"
+            android:layout_height="42.2dp"
+            android:src="@mipmap/img_cloud" />
+
+        <ImageView
+            android:id="@+id/img_button"
+            android:layout_width="38.2dp"
+            android:layout_height="38.2dp"
+            android:src="@mipmap/img_button"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="6dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <ImageView
+            android:id="@+id/img_button_front"
+            android:layout_width="38.2dp"
+            android:layout_height="38.2dp"
+            android:src="@mipmap/img_button_front" />
+
+        <com.kongzue.magicdaynightswitchbutton.TintCustomImageView
+            android:id="@+id/img_mask"
+            android:layout_width="38.2dp"
+            android:layout_height="38.2dp"
+            android:src="@mipmap/img_mask" />
+
+        <ImageView
+            android:id="@+id/img_cloud_back"
+            android:layout_width="101.2dp"
+            android:layout_height="42.2dp"
+            android:src="@mipmap/img_cloud" />
+
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="49.6dp"
+            android:layout_height="54.6dp"
+            android:src="@mipmap/img_star" />
+
+        <ImageView
+            android:id="@+id/img_border"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/img_border"/>
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

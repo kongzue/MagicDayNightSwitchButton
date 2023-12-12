@@ -1,0 +1,133 @@
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:duration="500"
+        motion:motionInterpolator="anticipate">
+        <OnClick motion:targetId="@+id/img_background" />
+            <!--只能二选一-->
+<!--        <OnSwipe-->
+<!--            motion:touchAnchorId="@+id/img_button"-->
+<!--            motion:dragDirection="dragRight"/>-->
+    </Transition>
+    <Transition
+        motion:constraintSetStart="@+id/end"
+        motion:constraintSetEnd="@+id/start"
+        motion:duration="500"
+        motion:motionInterpolator="anticipate">
+        <OnClick motion:targetId="@+id/img_background" />
+            <!--只能二选一-->
+<!--        <OnSwipe-->
+<!--            motion:touchAnchorId="@+id/img_button"-->
+<!--            motion:dragDirection="dragLeft"/>-->
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <!-- 这里定义起始状态的约束 -->
+        <Constraint
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <CustomAttribute
+                motion:attributeName="Color"
+                motion:customColorValue="@color/background_light" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/img_cloud_front"
+            android:layout_width="101.2dp"
+            android:layout_height="42.2dp"
+            android:translationX="8.6dp"
+            android:translationY="17.4dp" />
+        <Constraint
+            android:id="@+id/img_button"
+            android:layout_width="56.4dp"
+            android:layout_height="56.4dp"
+            android:translationX="0dp"
+            android:translationY="0dp" />
+        <Constraint
+            android:id="@+id/img_button_front"
+            android:layout_width="38.2dp"
+            android:layout_height="38.2dp"
+            android:translationX="6dp"
+            android:translationY="6dp" />
+        <Constraint
+            android:id="@+id/img_mask"
+            android:layout_width="38.2dp"
+            android:layout_height="38.2dp"
+            android:translationX="30.6dp"
+            android:translationY="-38.2dp">
+            <CustomAttribute
+                motion:attributeName="Color"
+                motion:customColorValue="@color/background_light" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/img_cloud_back"
+            android:layout_width="101.2dp"
+            android:layout_height="42.2dp"
+            android:translationX="8.6dp"
+            android:translationY="13.4dp" />
+        <Constraint
+            android:id="@+id/img_star"
+            android:layout_width="87.6dp"
+            android:layout_height="61.2dp"
+            android:translationX="-41.6dp"
+            android:translationY="-69.8dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <!-- 这里定义结束状态的约束 -->
+        <Constraint
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <CustomAttribute
+                motion:attributeName="Color"
+                motion:customColorValue="@color/background_dark" />
+        </Constraint>
+        <Constraint
+            android:id="@+id/img_cloud_front"
+            android:layout_width="101.2dp"
+            android:layout_height="42.2dp"
+            android:translationX="-105.4dp"
+            android:translationY="17.4dp" />
+        <Constraint
+            android:id="@+id/img_button"
+            android:layout_width="56.4dp"
+            android:layout_height="56.4dp"
+            android:translationX="5dp"
+            android:translationY="2dp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintRight_toRightOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"/>
+        <Constraint
+            android:id="@+id/img_button_front"
+            android:layout_width="38.2dp"
+            android:layout_height="38.2dp"
+            android:translationX="55.6dp"
+            android:translationY="6dp" />
+        <Constraint
+            android:id="@+id/img_mask"
+            android:layout_width="38.2dp"
+            android:layout_height="38.2dp"
+            android:translationX="42.6dp"
+            android:translationY="-7.6dp">
+            <CustomAttribute
+                motion:attributeName="Color"
+                motion:customColorValue="@color/background_dark"/>
+        </Constraint>
+        <Constraint
+            android:id="@+id/img_cloud_back"
+            android:layout_width="101.2dp"
+            android:layout_height="42.2dp"
+            android:translationX="-105.4dp"
+            android:translationY="13.4dp" />
+        <Constraint
+            android:id="@+id/img_star"
+            android:layout_width="49.6dp"
+            android:layout_height="34.6dp"
+            android:translationX="9.6dp"
+            android:translationY="5.4dp" />
+    </ConstraintSet>
+</MotionScene>

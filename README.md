@@ -8,6 +8,6 @@
 
 ### 预览视频
 
-<video src="readme/preview.mp4"></video>
+https://github.com/kongzue/MagicDayNightSwitchButton/assets/10115359/9fcc9389-92f3-4f9c-a9b3-601507a8ed7b
 
 没啥复杂的，就一堆图层，还用的固定坐标，随手练习作品我没动力搞全，想当伸手党的自己去改，我代码都开源了...

@@ -27,7 +27,7 @@
             android:background="#036BFF" />
 
         <ImageView
-            android:id="@+id/img_cloud_front"
+            android:id="@+id/img_cloud_back"
             android:layout_width="101.2dp"
             android:layout_height="42.2dp"
             android:src="@mipmap/img_cloud" />
@@ -54,7 +54,7 @@
             android:src="@mipmap/img_mask" />
 
         <ImageView
-            android:id="@+id/img_cloud_back"
+            android:id="@+id/img_cloud_front"
             android:layout_width="101.2dp"
             android:layout_height="42.2dp"
             android:src="@mipmap/img_cloud" />

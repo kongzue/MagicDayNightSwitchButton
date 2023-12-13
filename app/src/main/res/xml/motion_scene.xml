@@ -35,11 +35,11 @@
                 motion:customColorValue="@color/background_light" />
         </Constraint>
         <Constraint
-            android:id="@+id/img_cloud_front"
+            android:id="@+id/img_cloud_back"
             android:layout_width="101.2dp"
             android:layout_height="42.2dp"
             android:translationX="8.6dp"
-            android:translationY="17.4dp" />
+            android:translationY="13.4dp" />
         <Constraint
             android:id="@+id/img_button"
             android:layout_width="56.4dp"
@@ -63,11 +63,11 @@
                 motion:customColorValue="@color/background_light" />
         </Constraint>
         <Constraint
-            android:id="@+id/img_cloud_back"
+            android:id="@+id/img_cloud_front"
             android:layout_width="101.2dp"
             android:layout_height="42.2dp"
             android:translationX="8.6dp"
-            android:translationY="13.4dp" />
+            android:translationY="17.4dp" />
         <Constraint
             android:id="@+id/img_star"
             android:layout_width="87.6dp"
@@ -87,11 +87,11 @@
                 motion:customColorValue="@color/background_dark" />
         </Constraint>
         <Constraint
-            android:id="@+id/img_cloud_front"
+            android:id="@+id/img_cloud_back"
             android:layout_width="101.2dp"
             android:layout_height="42.2dp"
             android:translationX="-105.4dp"
-            android:translationY="17.4dp" />
+            android:translationY="13.4dp" />
         <Constraint
             android:id="@+id/img_button"
             android:layout_width="56.4dp"
@@ -118,11 +118,11 @@
                 motion:customColorValue="@color/background_dark"/>
         </Constraint>
         <Constraint
-            android:id="@+id/img_cloud_back"
+            android:id="@+id/img_cloud_front"
             android:layout_width="101.2dp"
             android:layout_height="42.2dp"
             android:translationX="-105.4dp"
-            android:translationY="13.4dp" />
+            android:translationY="17.4dp" />
         <Constraint
             android:id="@+id/img_star"
             android:layout_width="49.6dp"

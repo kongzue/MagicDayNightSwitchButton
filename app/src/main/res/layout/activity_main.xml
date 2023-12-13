@@ -32,7 +32,7 @@
             android:layout_height="42.2dp"
             android:src="@mipmap/img_cloud" />
 
-        <ImageView
+        <com.kongzue.magicdaynightswitchbutton.TintCustomImageView
             android:id="@+id/img_button"
             android:layout_width="38.2dp"
             android:layout_height="38.2dp"

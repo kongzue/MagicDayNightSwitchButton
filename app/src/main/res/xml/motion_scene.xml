@@ -2,26 +2,26 @@
     xmlns:motion="http://schemas.android.com/apk/res-auto">
 
     <Transition
-        motion:constraintSetStart="@+id/start"
         motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@+id/start"
         motion:duration="500"
         motion:motionInterpolator="anticipate">
         <OnClick motion:targetId="@+id/img_background" />
-            <!--只能二选一-->
-<!--        <OnSwipe-->
-<!--            motion:touchAnchorId="@+id/img_button"-->
-<!--            motion:dragDirection="dragRight"/>-->
+        <!--只能二选一-->
+        <!--        <OnSwipe-->
+        <!--            motion:touchAnchorId="@+id/img_button"-->
+        <!--            motion:dragDirection="dragRight"/>-->
     </Transition>
     <Transition
-        motion:constraintSetStart="@+id/end"
         motion:constraintSetEnd="@+id/start"
+        motion:constraintSetStart="@+id/end"
         motion:duration="500"
         motion:motionInterpolator="anticipate">
         <OnClick motion:targetId="@+id/img_background" />
-            <!--只能二选一-->
-<!--        <OnSwipe-->
-<!--            motion:touchAnchorId="@+id/img_button"-->
-<!--            motion:dragDirection="dragLeft"/>-->
+        <!--只能二选一-->
+        <!--        <OnSwipe-->
+        <!--            motion:touchAnchorId="@+id/img_button"-->
+        <!--            motion:dragDirection="dragLeft"/>-->
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
@@ -45,7 +45,11 @@
             android:layout_width="56.4dp"
             android:layout_height="56.4dp"
             android:translationX="0dp"
-            android:translationY="0dp" />
+            android:translationY="0dp">
+            <CustomAttribute
+                motion:attributeName="Color"
+                motion:customColorValue="@color/button_light" />
+        </Constraint>
         <Constraint
             android:id="@+id/img_button_front"
             android:layout_width="38.2dp"
@@ -100,7 +104,11 @@
             android:translationY="2dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintRight_toRightOf="parent"
-            motion:layout_constraintTop_toTopOf="parent"/>
+            motion:layout_constraintTop_toTopOf="parent">
+            <CustomAttribute
+                motion:attributeName="Color"
+                motion:customColorValue="@color/button_dark" />
+        </Constraint>
         <Constraint
             android:id="@+id/img_button_front"
             android:layout_width="38.2dp"
@@ -115,7 +123,7 @@
             android:translationY="-7.6dp">
             <CustomAttribute
                 motion:attributeName="Color"
-                motion:customColorValue="@color/background_dark"/>
+                motion:customColorValue="@color/background_dark" />
         </Constraint>
         <Constraint
             android:id="@+id/img_cloud_front"

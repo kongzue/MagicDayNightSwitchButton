@@ -5,4 +5,6 @@
     <color name="background_dark">#1B304C</color>
     <color name="background_light">#036BFF</color>
     <color name="backgroundColor">#A5CFFF</color>
+    <color name="button_dark">#FFF9E1</color>
+    <color name="button_light">#FFC516</color>
 </resources>
